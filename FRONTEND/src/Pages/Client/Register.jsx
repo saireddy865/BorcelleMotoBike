@@ -36,7 +36,7 @@ function Register() {
     }
 
     try {
-      const response = await axios.post('http://localhost:4700/users', formData);
+      const response = await axios.post('https://borcellemotobike.onrender.com/users', formData);
       localStorage.setItem('token', response.data.token);
       navigate('/home');
     } catch (err) {

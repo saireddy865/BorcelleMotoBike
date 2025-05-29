@@ -11,7 +11,7 @@ const Home = () => {
   useEffect(() => {
     const fetchBikes = async () => {
       try {
-        const response = await fetch('http://localhost:4700');
+        const response = await fetch('https://borcellemotobike.onrender.com');
         if (!response.ok) {
           throw new Error('Failed to fetch Bike data');
         }

@@ -55,7 +55,7 @@ const AdminLogin = () => {
     }
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:4700/admin/login', {
+      const response = await fetch('https://borcellemotobike.onrender.com/admin/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

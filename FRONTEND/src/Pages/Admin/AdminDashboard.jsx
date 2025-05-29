@@ -63,7 +63,7 @@ const AdminDashboardBikes = () => {
     setLoading(true);
     try {
       console.log('Fetching bikes with token:', token);
-      const response = await fetch('http://localhost:4700/admin/bikes', {
+      const response = await fetch('https://borcellemotobike.onrender.com/admin/bikes', {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -112,7 +112,7 @@ const AdminDashboardBikes = () => {
   const handleApprove = async (bike_id) => {
     try {
       const token = JSON.parse(localStorage.getItem('Admin')).adminToken;
-      const response = await fetch(`http://localhost:4700/bikes/${bike_id}/approve`, {
+      const response = await fetch(`https://borcellemotobike.onrender.com/bikes/${bike_id}/approve`, {
         method: 'PATCH',
         headers: {
           Authorization: `Bearer ${token}`,
@@ -223,7 +223,7 @@ const AdminDashboardBikes = () => {
         formData: Object.fromEntries(formData),
       });
 
-      const response = await fetch(`http://localhost:4700/admin/bikes/${editBike.bike_id}`, {
+      const response = await fetch(`https://borcellemotobike.onrender.com/admin/bikes/${editBike.bike_id}`, {
         method: 'PUT',
         headers: {
           Authorization: `Bearer ${token}`,
@@ -309,7 +309,7 @@ const AdminDashboardBikes = () => {
         formData: Object.fromEntries(formData),
       });
 
-      const response = await fetch('http://localhost:4700/admin/addBikes', {
+      const response = await fetch('https://borcellemotobike.onrender.com/admin/addBikes', {
         method: 'POST',
         headers: {
           Authorization: `Bearer ${token}`,
