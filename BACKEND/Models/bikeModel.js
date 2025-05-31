@@ -26,7 +26,7 @@ const bikeSchema = new mongoose.Schema(
           "Sport",
           "Touring",
           "Standard",
-          "Scooter",
+          "Scooty",
           "Adventure",
         ], // Common bike types
         message: "{VALUE} is not a valid bike type",

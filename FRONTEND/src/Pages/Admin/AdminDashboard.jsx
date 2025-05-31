@@ -558,7 +558,7 @@ const AdminDashboardBikes = () => {
                 margin="normal"
                 required
               >
-                {['Sport', 'Touring', 'Standard', 'Scooter', 'Adventure'].map((type) => (
+                {['Sport', 'Touring', 'Standard', 'Scooty', 'Adventure'].map((type) => (
                   <MenuItem key={type} value={type}>
                     {type}
                   </MenuItem>
@@ -700,7 +700,7 @@ const AdminDashboardBikes = () => {
                 margin="normal"
                 required
               >
-                {['Sport', 'Touring', 'Standard', 'Scooter', 'Adventure'].map((type) => (
+                {['Sport', 'Touring', 'Standard', 'Scooty', 'Adventure'].map((type) => (
                   <MenuItem key={type} value={type}>
                     {type}
                   </MenuItem>

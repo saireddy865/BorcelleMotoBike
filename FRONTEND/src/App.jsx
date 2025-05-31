@@ -11,6 +11,8 @@ import Register from './Pages/Client/Register'
 import AdminLogin from './Pages/Admin/AdminLogin'
 import AdminDashboardBikes from './Pages/Admin/AdminDashboard'
 import ServiceBanner from './Components/ServiceBanner'
+import BikeFilter from './Components/BikeFilter'
+import BikeBookings from './Pages/Client/Booking'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -27,6 +29,10 @@ function App() {
         <Route path="/services" element={<ServiceBanner/>} />
         <Route path="/admin/login" element={<AdminLogin/>} />
         <Route path="/admin/dashboard" element={<AdminDashboardBikes/>} />
+        <Route path="/bikes/:category" element={<BikeFilter/>} />
+        <Route path="/bookings/:bike_id" element={<BikeBookings/>} />
+
+
       </Routes>
     </BrowserRouter>
     </>
